@@ -6,6 +6,8 @@
 
 View the current testing site @ [https://we-are-sorry-com.now.sh/](https://we-are-sorry-com.now.sh/)
 
+> To help out, please check out the [roadmap](./ROADMAP.md)
+
 ## Disclaimer
 
 This is called 'we-are-sorry.com' because I, [Robby Shaw](https://github.com/robbynshaw) am a white American, and I am sorry, and I know that is not enough. This app is not supposed to be just for white people to use, but I do hope that it can serve as a very small, inadequate apology _from_ some white people, and I hope that others may appropriate the name in their own way.
