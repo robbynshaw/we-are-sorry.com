@@ -69,3 +69,17 @@ We are uniquely situated in history to create novel platforms for massive, socia
 - [wearesorrydotcom.slack.com](https://wearesorrydotcom.slack.com)
   - [invite link](https://join.slack.com/t/wearesorrydotcom/shared_invite/zt-evxer2n8-IKlr_7~Eji~QUlUxS~do1Q)
 - [github issues](https://github.com/robbynshaw/we-are-sorry.com/issues)
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
