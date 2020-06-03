@@ -8,9 +8,8 @@ import ByLine from './ByLine';
 
 const SpeechBubble = styled(Box)`
   position: relative;
-  padding: 15px;
   margin: 1em 0 3em;
-  border: 5px solid #5a8f00;
+  border: 7px solid black;
   color: #333;
   background: #fff;
   /* css3 */
@@ -25,7 +24,7 @@ const SpeechBubble = styled(Box)`
     left: 40px; /* controls horizontal position */
     border-width: 20px 20px 0;
     border-style: solid;
-    border-color: #5a8f00 transparent;
+    border-color: black transparent;
     /* reduce the damage in FF3.0 */
     display: block;
     width: 0;
@@ -54,7 +53,7 @@ const Comment: React.SFC<CommentProps> = (props: CommentProps): ReactElement => 
   const { fullName } = author;
 
   return (
-    <SpeechBubble>
+    <SpeechBubble p={2}>
       <RatingsBar ratings={ratings} />
       <Text fontFamily="body" px={3} py={2}>
         <ReactMarkdown source={message} />

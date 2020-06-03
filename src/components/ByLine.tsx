@@ -1,16 +1,17 @@
 import React from 'react';
-import { Box, Text } from 'rebass';
+import { Box, Text, Flex } from 'rebass';
 import AuthorModel from '@src/models/AuthorModel';
 
 const ByLine: React.SFC<AuthorModel> = (props: AuthorModel) => {
   const { fullName } = props;
-  const msg = `Written by ${fullName}`;
+  const msg = `-- ${fullName}`;
   return (
-    <Box maxWidth="300px" marginTop={3} px={3} py={2} variant="lightBorder">
-      <Text fontFamily="body" textAlign="center">
+    <Flex px={3} py={2} color="grey">
+      <Box mx="auto" />
+      <Text fontSize={1} fontFamily="body" textAlign="center">
         {msg}
       </Text>
-    </Box>
+    </Flex>
   );
 };
 

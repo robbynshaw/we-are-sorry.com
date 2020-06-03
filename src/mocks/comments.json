@@ -2,10 +2,53 @@
   {
     "id": "abcd",
     "itemId": "comp-1",
-    "message": "Hello world",
+    "message": "The data clearly shows that...",
     "author": {
       "fullName": "Bilbo Baggins"
     },
-    "ratings": []
+    "ratings": [
+      {
+        "name": "Overall",
+        "stars": 3,
+        "votes": 2321,
+        "calculated": true
+      },
+      {
+        "name": "Helpful",
+        "stars": 3,
+        "votes": 1356
+      },
+      {
+        "name": "Accurate",
+        "stars": 4,
+        "votes": 965
+      }
+    ]
+  },
+  {
+    "id": "abcd",
+    "itemId": "comp-1",
+    "message": "But this data clearly shows that...",
+    "author": {
+      "fullName": "Galadriel"
+    },
+    "ratings": [
+      {
+        "name": "Overall",
+        "stars": 3,
+        "votes": 2321,
+        "calculated": true
+      },
+      {
+        "name": "Helpful",
+        "stars": 3,
+        "votes": 1356
+      },
+      {
+        "name": "Accurate",
+        "stars": 4,
+        "votes": 965
+      }
+    ]
   }
 ]

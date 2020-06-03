@@ -2,7 +2,7 @@ const theme = {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#07c',
+    primary: '#000',
     secondary: '#30c',
     muted: '#f6f6f9',
     gray: '#dddddf',
@@ -100,7 +100,8 @@ const theme = {
       variant: 'buttons.primary',
       color: 'primary',
       bg: 'transparent',
-      boxShadow: 'inset 0 0 2px',
+      boxShadow: 'none',
+      border: '7px solid black',
     },
     secondary: {
       variant: 'buttons.primary',

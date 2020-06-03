@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import CommentModel from '@src/models/CommentModel';
-import { Box, Text } from 'rebass';
+import { Box, Button } from 'rebass';
 import fetchState from '@src/lib/fetchState';
 import Comment from './Comment';
 
@@ -16,22 +16,18 @@ const Discussion: React.SFC<DiscussionProps> = (props: DiscussionProps): ReactEl
 
   return (
     <Box m={4} p={3}>
-      <Box mx={5} p={3}>
-        {comments &&
-          comments.map(({ id, message, author, ratings }, i) => (
-            <Comment
-              key={id}
-              id={id}
-              number={i + 1}
-              message={message}
-              author={author}
-              ratings={ratings}
-            />
-          ))}
-      </Box>
-      <Box variant="lightBorder" mx={5} p={3}>
-        <Text fontFamily="body">Click for more discussion [TODO]</Text>
-      </Box>
+      {comments &&
+        comments.map(({ id, message, author, ratings }, i) => (
+          <Comment
+            key={id}
+            id={id}
+            number={i + 1}
+            message={message}
+            author={author}
+            ratings={ratings}
+          />
+        ))}
+      <Button variant="outline">More ...</Button>
     </Box>
   );
 };

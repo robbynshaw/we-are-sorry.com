@@ -7,6 +7,13 @@ import RatingsBar from './RatingsBar';
 import Discussion from './Discussion';
 import ByLine from './ByLine';
 
+const InvertedSubtitle = styled(Heading)`
+  background-color: black;
+  color: white;
+  margin-left: -100px;
+  margin-right: -100px;
+`;
+
 const Number = styled(Text)`
   margin-left: -25px;
 `;
@@ -41,8 +48,11 @@ const IssueComponent: React.SFC<IssueComponentProps> = (
         <ReactMarkdown source={description} />
       </Text>
       <ByLine fullName={fullName} />
+      <InvertedSubtitle py={4} px={5} marginTop={2}>
+        The discussion points are
+      </InvertedSubtitle>
       <Discussion itemType="component" itemId={id} />
-      <Box variant="lightBorder" m={3} p={3}>
+      <Box variant="lightBorder" my={3} py={3}>
         <Text fontFamily="body">Click Here to view proposed solutions [TODO]</Text>
       </Box>
     </Box>
