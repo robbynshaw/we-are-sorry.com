@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import App from 'next/app';
+import App, { AppContext, AppInitialProps } from 'next/app';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '@src/theme';
 import 'fontsource-work-sans';
@@ -17,8 +17,7 @@ class CustomApp extends App {
     );
   }
 
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  public static async getInitialProps({ Component, ctx }) {
+  public static async getInitialProps({ Component, ctx }: AppContext): Promise<AppInitialProps> {
     const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
     return { pageProps };
   }
