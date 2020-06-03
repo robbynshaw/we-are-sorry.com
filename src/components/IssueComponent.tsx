@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import RatingsBar from './RatingsBar';
 import Discussion from './Discussion';
 import ByLine from './ByLine';
+import Stars from './Stars';
 
 const InvertedSubtitle = styled(Heading)`
   background-color: black;
@@ -52,9 +53,13 @@ const IssueComponent: React.SFC<IssueComponentProps> = (
         The discussion points are
       </InvertedSubtitle>
       <Discussion itemType="component" itemId={id} />
-      <Box variant="lightBorder" my={3} py={3}>
-        <Text fontFamily="body">Click Here to view proposed solutions [TODO]</Text>
-      </Box>
+      <InvertedSubtitle py={4} px={5} marginTop={2}>
+        <Stars count={3} />
+        <Text display="inline-block" mx={2}>
+          The proposed solutions are
+        </Text>
+        <Stars count={3} />
+      </InvertedSubtitle>
     </Box>
   );
 };
