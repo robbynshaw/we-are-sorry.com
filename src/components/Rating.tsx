@@ -15,8 +15,8 @@ const Rating: React.SFC<RatingModel> = (props: RatingModel): ReactElement => {
         <Box display="inline" mx={1}>
           :
         </Box>
-        {starsAr.map(() => (
-          <span role="img" aria-label="Star">
+        {starsAr.map(i => (
+          <span role="img" aria-label="Star" key={i}>
             ⭐
           </span>
         ))}

@@ -12,7 +12,13 @@ const RatingsBar: React.SFC<RatingsBarProps> = (props: RatingsBarProps) => {
   return (
     <Box>
       {ratings.map(r => (
-        <Rating name={r.name} stars={r.stars} votes={r.votes} calculated={r.calculated} />
+        <Rating
+          key={r.name}
+          name={r.name}
+          stars={r.stars}
+          votes={r.votes}
+          calculated={r.calculated}
+        />
       ))}
     </Box>
   );

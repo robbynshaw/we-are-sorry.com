@@ -4,6 +4,8 @@ import ReactMarkdown from 'react-markdown';
 import IssueComponentModel from '@src/models/IssueComponentModel';
 import styled from '@emotion/styled';
 import RatingsBar from './RatingsBar';
+import Discussion from './Discussion';
+import ByLine from './ByLine';
 
 const Number = styled(Text)`
   margin-left: -25px;
@@ -16,7 +18,8 @@ export interface IssueComponentProps extends IssueComponentModel {
 const IssueComponent: React.SFC<IssueComponentProps> = (
   props: IssueComponentProps,
 ): ReactElement => {
-  const { number, name, description, ratings } = props;
+  const { number, id, name, description, ratings, author } = props;
+  const { fullName } = author;
 
   return (
     <Box p={5} my={3} display="inline-block" variant="lightBorder">
@@ -37,17 +40,8 @@ const IssueComponent: React.SFC<IssueComponentProps> = (
       <Text fontFamily="body" px={3} py={2}>
         <ReactMarkdown source={description} />
       </Text>
-      <Box maxWidth="300px" marginTop={3} px={3} py={2} variant="lightBorder">
-        <Text fontFamily="body" textAlign="center">
-          Written By George Harrison Ford
-        </Text>
-      </Box>
-      <Box variant="lightBorder" m={3} p={3}>
-        <Text fontFamily="body">
-          Snippets of top 3 discussion notes (research, debate, etc) [TODO]
-        </Text>
-        <Text fontFamily="body">Click here to view discussion [TODO]</Text>
-      </Box>
+      <ByLine fullName={fullName} />
+      <Discussion itemType="component" itemId={id} />
       <Box variant="lightBorder" m={3} p={3}>
         <Text fontFamily="body">Click Here to view proposed solutions [TODO]</Text>
       </Box>

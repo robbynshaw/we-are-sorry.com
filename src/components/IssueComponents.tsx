@@ -31,13 +31,15 @@ const IssueComponents: React.SFC<IssueComponentsProps> = (
         {msg}
       </InvertedSubtitle>
       <Box mx={5} p={3}>
-        {components.map(({ name, description, ratings }, i) => (
+        {components.map(({ id, name, description, ratings, author }, i) => (
           <IssueComponent
-            key={name}
+            key={id}
+            id={id}
             number={i + 1}
             name={name}
             description={description}
             ratings={ratings}
+            author={author}
           />
         ))}
       </Box>

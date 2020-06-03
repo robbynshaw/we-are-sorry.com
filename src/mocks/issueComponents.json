@@ -1,0 +1,83 @@
+[
+  {
+    "issue": "issue-1",
+    "id": "comp-1",
+    "name": "Institutional Violence As The Status Quo",
+    "description": "'black and Hispanic drivers were searched approximately fo...`",
+    "ratings": [
+      {
+        "name": "Overall",
+        "stars": 3,
+        "votes": 2321,
+        "calculated": true
+      },
+      {
+        "name": "Critical",
+        "stars": 3,
+        "votes": 1356
+      },
+      {
+        "name": "Well-Researched",
+        "stars": 4,
+        "votes": 965
+      }
+    ],
+    "author": {
+      "fullName": "George Harrison Ford"
+    }
+  },
+  {
+    "issue": "issue-1",
+    "id": "comp-2",
+    "name": "Economic Disparity / Oppression",
+    "description": "'black and Hispanic drivers were searched approximately fo...`",
+    "ratings": [
+      {
+        "name": "Overall",
+        "stars": 3,
+        "votes": 2321,
+        "calculated": true
+      },
+      {
+        "name": "Critical",
+        "stars": 3,
+        "votes": 1356
+      },
+      {
+        "name": "Well-Researched",
+        "stars": 4,
+        "votes": 965
+      }
+    ],
+    "author": {
+      "fullName": "George Harrison Ford"
+    }
+  },
+  {
+    "issue": "issue-2",
+    "id": "comp-3",
+    "name": "Unjust Jailings for Petty Crimes",
+    "description": "'black and Hispanic drivers were searched approximately fo...`",
+    "ratings": [
+      {
+        "name": "Overall",
+        "stars": 3,
+        "votes": 2321,
+        "calculated": true
+      },
+      {
+        "name": "Critical",
+        "stars": 3,
+        "votes": 1356
+      },
+      {
+        "name": "Well-Researched",
+        "stars": 4,
+        "votes": 965
+      }
+    ],
+    "author": {
+      "fullName": "George Harrison Ford"
+    }
+  }
+]

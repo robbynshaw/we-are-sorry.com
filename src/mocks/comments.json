@@ -1,0 +1,11 @@
+[
+  {
+    "id": "abcd",
+    "itemId": "comp-1",
+    "message": "Hello world",
+    "author": {
+      "fullName": "Bilbo Baggins"
+    },
+    "ratings": []
+  }
+]
