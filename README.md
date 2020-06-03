@@ -2,19 +2,23 @@
 
 > A tiny social app for electing solutions for the racism problem in the USA
 
+![site mockup](./media/mockup.png)
+
+View the current testing site @ [https://we-are-sorry-com.now.sh/](https://we-are-sorry-com.now.sh/)
+
 ## Disclaimer
 
-This is called 'we-are-sorry.com' because I, [Robby Shaw](https://github.com/robbynshaw) am a white American, and I am sorry, and I know that is not enough. This app is not supposed to be just for white people to use, but I do hope that it can serve as a very small, inadequate apology *from* some white people, and I hope that others may appropriate the name in their own way.
+This is called 'we-are-sorry.com' because I, [Robby Shaw](https://github.com/robbynshaw) am a white American, and I am sorry, and I know that is not enough. This app is not supposed to be just for white people to use, but I do hope that it can serve as a very small, inadequate apology _from_ some white people, and I hope that others may appropriate the name in their own way.
 
 ## Background
 
 We appear to be in desperate need of a platform for massive social collaboration. Current major activism platforms include **change.org**, **gofundme.com**, **kickstarter.com**, etc. The one major missing feature in all of these systems is collaboration; i.e. there is _contribution_ towards a solution but not _collaboration_ toward a proposed solution.
 
-> [Campaign Zero](https://www.joincampaignzero.org/) is another app on the scene with a very similar design/strategy. However, *Campaign Zero* is limited in scope to police brutality, which is only part of the greater issue. In fact, *Campaign Zero* could and probably should be proposed as a 'proposed solution' for a 'critical component' as shown below.
+> [Campaign Zero](https://www.joincampaignzero.org/) is another app on the scene with a very similar design/strategy. However, _Campaign Zero_ is limited in scope to police brutality, which is only part of the greater issue. In fact, _Campaign Zero_ could and probably should be proposed as a 'proposed solution' for a 'critical component' as shown below.
 
 For issues as critical and urgent as the current racism crisis in America, solutions incubated by individuals or small groups of people are unlikely to be comprehensive or acceptable for large groups of the effected population. This is as true for ground up solutions as it is for top down political solutions. A few people in a room hardly constitutes an adequate representation of the collective intelligence of a populace.
 
-Instead, we should attempt to **build a system in which the majority of people can collaborate toward and commit upon a solution**, utilizing principles of [critical mass](https://en.wikipedia.org/wiki/Critical_mass_(sociodynamics)) and positive social pressure.
+Instead, we should attempt to **build a system in which the majority of people can collaborate toward and commit upon a solution**, utilizing principles of [critical mass](<https://en.wikipedia.org/wiki/Critical_mass_(sociodynamics)>) and positive social pressure.
 
 We are uniquely situated in history to create novel platforms for massive, social collaboration. We should make the most of that opportunity to further the cause of a free and just humanity. _Any attempt will be a long shot, but we should at least try to help._
 
@@ -22,21 +26,21 @@ We are uniquely situated in history to create novel platforms for massive, socia
 
 - Visit home page (we-are-sorry.com)
   - When the user clicks on any 'action', they are prompted to login
-- User sees *issue* detailed at the top of the page
+- User sees _issue_ detailed at the top of the page
   - 'Racism in America is not going away...'
-- User sees hightest rated *critical components* underneath
+- User sees hightest rated _critical components_ underneath
   - e.g. economic disparity, prison population disparity, policing oversight, etc.
   - each component is a record submitted by a user with a title and description
   - user can add a component
   - user can vote on a component
-- For each *critical component, user see's a list of the highest rated proposed solutions
+- For each \*critical component, user see's a list of the highest rated proposed solutions
   - e.g. hunger strike, protest, petition
   - each solution is a record submitted by a user with a title, description, commitment types, and critical mass amount for each commitment type
   - user can add a proposed solution
   - user can vote on a solution
   - user can commit to a commitment type
     - user is notified when commitments reach critical mass
-- For both *critical components* and *proposed solutions*,  users may add a 'discussion point'
+- For both _critical components_ and _proposed solutions_, users may add a 'discussion point'
   - Essentially a comment, but should be more in-depth
     - Ideally including data and sources
   - Users can vote on discussion points
@@ -59,7 +63,7 @@ We are uniquely situated in history to create novel platforms for massive, socia
 
 ## Architecture
 
-> Goal is to build this *hack-a-thon* style, as quickly as possible
+> Goal is to build this _hack-a-thon_ style, as quickly as possible
 
 - AspNetCore for Backend API
 - NextJS or React for FrontEnd
