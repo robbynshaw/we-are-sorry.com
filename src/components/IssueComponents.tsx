@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Box, Heading, Text } from 'rebass';
+import { Box, Heading, Text, Button } from 'rebass';
 import IssueComponentModel from '@src/models/IssueComponentModel';
 import styled from '@emotion/styled';
 import IssueComponent from './IssueComponent';
@@ -43,9 +43,9 @@ const IssueComponents: React.SFC<IssueComponentsProps> = (
           />
         ))}
       </Box>
-      <Box variant="lightBorder" mx={5} p={3}>
-        <Text fontFamily="body">Click for more components [TODO]</Text>
-      </Box>
+      <Button marginLeft={5} variant="outline">
+        More ...
+      </Button>
     </Container>
   );
 };

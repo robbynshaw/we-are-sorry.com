@@ -7,6 +7,7 @@ import RatingsBar from './RatingsBar';
 import Discussion from './Discussion';
 import ByLine from './ByLine';
 import Stars from './Stars';
+import Solutions from './Solutions';
 
 const InvertedSubtitle = styled(Heading)`
   background-color: black;
@@ -45,7 +46,7 @@ const IssueComponent: React.SFC<IssueComponentProps> = (
         {name}
       </Heading>
       <RatingsBar ratings={ratings} />
-      <Text fontFamily="body" px={3} py={2}>
+      <Text fontFamily="body" fontSize={3} px={3} py={2}>
         <ReactMarkdown source={description} />
       </Text>
       <ByLine fullName={fullName} />
@@ -60,6 +61,7 @@ const IssueComponent: React.SFC<IssueComponentProps> = (
         </Text>
         <Stars count={3} />
       </InvertedSubtitle>
+      <Solutions />
     </Box>
   );
 };
