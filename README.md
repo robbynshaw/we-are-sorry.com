@@ -1,5 +1,14 @@
 # we-are-sorry.com
 
+> :warning: As we currently don't have enough support for this project, I will be moving on to find other ways to help.
+> 
+> I recommend using [Anguish and Action](https://www.obama.org/anguish-and-action) from the Obama foundation for anyone 
+> looking for a similar *hub* for resources at this present time.
+> 
+> Thanks for the support, everyone!
+
+- - -
+
 > A tiny social app for electing solutions for the racism problem in the USA
 
 ![site mockup](./media/mockup.png)
